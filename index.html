@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flip Dashboard Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>💎 Flip Dashboard Pro</h1>
+
+<div class="card form-card">
+    <input type="text" id="item" placeholder="Item Name">
+    <input type="number" id="amount" placeholder="Menge">
+    <input type="number" id="buy" placeholder="Kaufpreis pro Stück">
+    <button onclick="addBuy()">Kauf speichern</button>
+</div>
+
+<div class="stats card">
+    <div>Gesamt Investiert: <span id="invested">0</span></div>
+    <div>Gewinn: <span id="profit">0</span></div>
+    <div>Verlust: <span id="loss">0</span></div>
+    <div>Netto: <span id="net">0</span></div>
+</div>
+
+<h2>🟡 Offene Deals</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Menge</th>
+<th>Investiert</th>
+<th>Aktion</th>
+</tr>
+</thead>
+<tbody id="openTable"></tbody>
+</table>
+
+<h2>🟢 Verkaufte Deals</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Menge</th>
+<th>Investiert</th>
+<th>Einnahmen</th>
+<th>Gewinn</th>
+<th>%</th>
+<th>Aktion</th>
+</tr>
+</thead>
+<tbody id="soldTable"></tbody>
+</table>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
